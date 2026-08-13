@@ -1,0 +1,327 @@
+---
+const year = new Date().getFullYear();
+const whatsapp = "https://wa.me/2348078011003";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B4D2C'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%2316A34A' font-family='Arial' font-weight='bold'%3EB%3C/text%3E%3C/svg%3E" />
+    <title>BoostHub NG — Grow Your Brand Faster</title>
+    <meta
+      name="description"
+      content="BoostHub NG helps Nigerian businesses grow online with fast, affordable social media boosting, engagement and marketing services. Real results, 24/7 support."
+    />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand">
+          <span class="logo">B</span>
+          <span>BoostHub<span class="ng">NG</span></span>
+        </a>
+        <nav class="links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href={whatsapp} class="btn btn-sm">Chat on WhatsApp</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">🚀 Nigeria's growth partner</p>
+          <h1>Grow your brand faster with <span>BoostHub NG</span></h1>
+          <p class="lead">
+            Fast, affordable social media boosting, engagement and marketing —
+            built for Nigerian businesses that want real reach and real results.
+          </p>
+          <div class="cta-row">
+            <a href="#pricing" class="btn btn-lg">Get started</a>
+            <a href={whatsapp} class="btn btn-lg btn-ghost">Talk to us</a>
+          </div>
+          <p class="trust">Trusted by growing brands across Lagos, Abuja &amp; beyond.</p>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">Everything you need to grow</h2>
+          <p class="section-sub">
+            One platform for reach, engagement and results — no guesswork.
+          </p>
+          <div class="grid">
+            <article class="card">
+              <div class="icon">📈</div>
+              <h3>Real Growth</h3>
+              <p>
+                Boost followers, views and engagement with genuine audiences that
+                stick — no bots, no fluff, just measurable momentum.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">⚡</div>
+              <h3>Fast Delivery</h3>
+              <p>
+                Campaigns start within minutes. Watch your numbers climb the same
+                day you order, with clear progress you can track.
+              </p>
+            </article>
+            <article class="card">
+              <div class="icon">💬</div>
+              <h3>24/7 Support</h3>
+              <p>
+                A real human on WhatsApp whenever you need help — quick answers,
+                honest advice, and a team that actually cares.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING / CTA BAND -->
+      <section id="pricing" class="band">
+        <div class="container band-inner">
+          <h2>Simple pricing. No surprises.</h2>
+          <p>
+            Plans start from <strong>₦2,500</strong>. Pay for what you need, scale
+            when you're ready. Tell us your goal and we'll build the right package
+            for your budget.
+          </p>
+          <a href={whatsapp} class="btn btn-lg btn-accent">Start growing today</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="#top" class="brand">
+            <span class="logo">B</span>
+            <span>BoostHub<span class="ng">NG</span></span>
+          </a>
+          <p class="muted">Growth made simple for Nigerian businesses.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href={whatsapp} class="wa">💚 WhatsApp: +234 807 801 1003</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        © {year} BoostHub NG. All rights reserved.
+      </div>
+    </footer>
+
+    <style>
+      :root {
+        --brand: #0b4d2c;
+        --brand-dark: #08381f;
+        --accent: #16a34a;
+        --ink: #0f172a;
+        --muted: #64748b;
+        --bg: #ffffff;
+        --soft: #f1f6f2;
+        --radius: 16px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { text-decoration: none; color: inherit; }
+
+      .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        background: var(--brand);
+        color: #fff;
+        padding: 12px 22px;
+        border-radius: 999px;
+        font-weight: 600;
+        transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+      }
+      .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11, 77, 44, 0.25); }
+      .btn-sm { padding: 8px 16px; font-size: 0.9rem; }
+      .btn-lg { padding: 15px 30px; font-size: 1.05rem; }
+      .btn-accent { background: var(--accent); }
+      .btn-accent:hover { background: #128a3e; }
+      .btn-ghost {
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        color: #fff;
+      }
+      .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); box-shadow: none; }
+
+      /* Nav */
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e5eae6;
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+        font-size: 1.15rem;
+        color: var(--brand);
+      }
+      .brand .ng { color: var(--accent); }
+      .logo {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: var(--brand);
+        color: #fff;
+        font-weight: 800;
+      }
+      .links { display: flex; align-items: center; gap: 22px; }
+      .links > a:not(.btn) { color: var(--ink); font-weight: 500; }
+      .links > a:not(.btn):hover { color: var(--accent); }
+
+      /* Hero */
+      .hero {
+        background:
+          radial-gradient(1000px 500px at 80% -10%, rgba(22, 163, 74, 0.35), transparent),
+          linear-gradient(160deg, var(--brand) 0%, var(--brand-dark) 100%);
+        color: #fff;
+        padding: 90px 0 100px;
+      }
+      .hero-inner { max-width: 760px; }
+      .eyebrow {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.14);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        margin: 0 0 20px;
+      }
+      .hero h1 {
+        font-size: clamp(2.2rem, 6vw, 3.6rem);
+        line-height: 1.1;
+        margin: 0 0 18px;
+        font-weight: 800;
+      }
+      .hero h1 span { color: #8ff0b4; }
+      .lead {
+        font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+        color: rgba(255, 255, 255, 0.9);
+        margin: 0 0 30px;
+      }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+      .trust { margin-top: 26px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); }
+
+      /* Sections */
+      .section-title {
+        text-align: center;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        margin: 0 0 10px;
+      }
+      .section-sub {
+        text-align: center;
+        color: var(--muted);
+        margin: 0 auto 46px;
+        max-width: 520px;
+      }
+      .features { padding: 84px 0; background: var(--bg); }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .card {
+        background: var(--soft);
+        border: 1px solid #e3ece5;
+        border-radius: var(--radius);
+        padding: 32px 26px;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(11, 77, 44, 0.1); }
+      .icon {
+        font-size: 2rem;
+        width: 58px;
+        height: 58px;
+        display: grid;
+        place-items: center;
+        background: #fff;
+        border-radius: 14px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 12px rgba(11, 77, 44, 0.08);
+      }
+      .card h3 { margin: 0 0 8px; font-size: 1.25rem; color: var(--brand); }
+      .card p { margin: 0; color: #46524a; }
+
+      /* Band */
+      .band {
+        background: linear-gradient(120deg, var(--brand) 0%, var(--accent) 140%);
+        color: #fff;
+        padding: 74px 0;
+      }
+      .band-inner { text-align: center; max-width: 640px; }
+      .band h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin: 0 0 14px; }
+      .band p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.92); margin: 0 0 28px; }
+      .band strong { color: #eafff2; }
+
+      /* Footer */
+      .footer { background: var(--brand-dark); color: #cfe6d8; padding: 54px 0 26px; }
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 26px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .footer .brand { color: #fff; }
+      .footer .muted { margin: 12px 0 0; color: #9fc2ac; font-size: 0.95rem; }
+      .footer-links { display: flex; flex-direction: column; gap: 10px; text-align: right; }
+      .footer-links a:hover { color: #fff; }
+      .footer-links .wa { color: #8ff0b4; font-weight: 600; }
+      .copyright { padding-top: 22px; font-size: 0.85rem; color: #8fae9c; }
+
+      @media (max-width: 780px) {
+        .links > a:not(.btn) { display: none; }
+        .grid { grid-template-columns: 1fr; }
+        .footer-inner { flex-direction: column; }
+        .footer-links { text-align: left; }
+      }
+    </style>
+  </body>
+</html>
